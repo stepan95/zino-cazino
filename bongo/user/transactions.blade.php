@@ -26,7 +26,7 @@
                                 class="balance_right_image">
                             <div class="balance_right_item_description">
                                 <p class="balance_right_item_description_name">
-                                    @lang('Total Deposit')
+                                    @lang('Total deposit')
                                 </p>
                                 <p class="balance_right_item_description_money">
                                     <span class="jsTotalDeposit">{{ getAmount(auth()->user()->deposits->where('status',1)->sum('amount')) }}</span> {{ $general->cur_text }}
@@ -38,7 +38,7 @@
                                 class="balance_right_image">
                             <div class="balance_right_item_description">
                                 <p class="balance_right_item_description_name">
-                                    @lang('Total Withdraw')
+                                    @lang('Total withdraw')
                                 </p>
                                 <p class="balance_right_item_description_money">
                                     <span class="jsTotalWithdraw">{{ getAmount(auth()->user()->withdrawals->where('status',1)->sum('amount')) }}</span> {{ $general->cur_text }}
@@ -49,7 +49,7 @@
                             <img  loading="lazy"  src="/assets/images/profile/money_bonus.png" alt="money_bonus" class="balance_right_image">
                             <div class="balance_right_item_description">
                                 <p class="balance_right_item_description_name">
-                                    @lang('Total Bonus')
+                                    @lang('Total bonus')
                                 </p>
                                 <p class="balance_right_item_description_money">
                                     <span class="jsTotalBonus">{{ getAmount(auth()->user()->bonus) }}</span> {{ $general->cur_text }}
@@ -60,7 +60,7 @@
                             <img  loading="lazy"  src="/assets/images/profile/Zinocoin.png" alt="zinocoin" class="balance_right_image">
                             <div class="balance_right_item_description">
                                 <p class="balance_right_item_description_name">
-                                    @lang('Total Bonus')
+                                    @lang('Total bonus')
                                 </p>
                                 <p class="balance_right_item_description_money">
                                     <span class="jsTotalBonus">{{ getAmount(auth()->user()->bonus_zino) }}</span> {{ $general->cur_text }}
@@ -71,32 +71,32 @@
                     <div class="balance_menu balance_menu_desctop">
                         <div class="balance_menu_item">
                             <a href="{{ route('user.home') }}" class="balance_menu_item_title">
-                                Dashboard  
+                                @lang('Dashboard')  
                             </a>
                         </div>   
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                deposit
+                                @lang('Deposit')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.deposit') }}"> Deposit Money</a>
+                                    <a href="{{ route('user.deposit') }}"> @lang('Deposit money')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.deposit.history') }}"> History</a>
+                                    <a href="{{ route('user.deposit.history') }}"> @lang('History')</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Withdraw
+                                @lang('Withdraw')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.withdraw') }}"> Withdraw</a>
+                                    <a href="{{ route('user.withdraw') }}"> @lang('Withdraw')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.withdraw.history') }}">Withdraw History</a>
+                                    <a href="{{ route('user.withdraw.history') }}">@lang('Withdraw History')</a>
                                 </li>
                             </ul>
                         </div>
@@ -107,52 +107,52 @@
                         </div>  
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Reports
+                                @lang('reports')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.gameLog') }}"> Game Log</a>
+                                    <a href="{{ route('user.gameLog') }}"> @lang('Game Log')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.commissionLog') }}"> Commission Log</a>
+                                    <a href="{{ route('user.commissionLog') }}"> @lang('Commission Log')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.transactions') }}"> Transactions</a>
+                                    <a href="{{ route('user.transactions') }}"> @lang('Transactions')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.notifications') }}"> Notifications</a>
+                                    <a href="{{ route('user.notifications') }}"> @lang('Notifications')</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Support
+                                @lang('Support')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('ticket.open') }}"> Create New</a>
+                                    <a href="{{ route('ticket.open') }}"> @lang('Create New')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('ticket') }}"> My Tickets</a>
+                                    <a href="{{ route('ticket') }}"> @lang('My Tickets')</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Account
+                                @lang('Account')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.change.password') }}"> Change Password</a>
+                                    <a href="{{ route('user.change.password') }}"> @lang('Change Password')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.profile.setting') }}"> Profile Setting</a>
+                                    <a href="{{ route('user.profile.setting') }}"> @lang('Profile Setting')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.twofactor') }}"> 2FA Security</a>
+                                    <a href="{{ route('user.twofactor') }}"> @lang('2FA Security')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.logout') }}"> Logout</a>
+                                    <a href="{{ route('user.logout') }}"> @lang('logout')</a>
                                 </li>
                             </ul>
                         </div>
@@ -171,27 +171,27 @@
                     </div>
                     <div class="balance_menu_item">
                         <p class="balance_menu_item_title">
-                            deposit
+                            @lang('Deposit')
                         </p>
                         <ul class="balance_menu_item_list">
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.deposit') }}"> Deposit Money</a>
+                                <a href="{{ route('user.deposit') }}"> @lang('Deposit money')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.deposit.history') }}"> History</a>
+                                <a href="{{ route('user.deposit.history') }}"> @lang('History')</a>
                             </li>
                         </ul>
                     </div>
                     <div class="balance_menu_item">
                         <p class="balance_menu_item_title">
-                            Withdraw
+                            @lang('Withdraw')
                         </p>
                         <ul class="balance_menu_item_list">
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.withdraw') }}"> Withdraw</a>
+                                <a href="{{ route('user.withdraw') }}"> @lang('Withdraw')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.withdraw.history') }}">Withdraw History</a>
+                                <a href="{{ route('user.withdraw.history') }}">@lang('Withdraw History')</a>
                             </li>
                         </ul>
                     </div>
@@ -202,49 +202,49 @@
                     </div>
                     <div class="balance_menu_item">
                         <p class="balance_menu_item_title">
-                             Reports
+                             @lang('reports')
                         </p>
                         <ul class="balance_menu_item_list">
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.gameLog') }}"> Game Log</a>
+                                <a href="{{ route('user.gameLog') }}"> @lang('Game Log')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.commissionLog') }}"> Commission Log</a>
+                                <a href="{{ route('user.commissionLog') }}"> @lang('Commission Log')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.transactions') }}"> Transactions</a>
+                                <a href="{{ route('user.transactions') }}"> @lang('Transactions')</a>
                             </li>
                         </ul>
                     </div>
                     <div class="balance_menu_item">
                         <p class="balance_menu_item_title">
-                            Support
+                            @lang('Support')
                         </p>
                         <ul class="balance_menu_item_list">
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('ticket.open') }}"> Create New</a>
+                                <a href="{{ route('ticket.open') }}"> @lang('Create New')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('ticket') }}"> My Tickets</a>
+                                <a href="{{ route('ticket') }}"> @lang('My Tickets')</a>
                             </li>
                         </ul>
                     </div>
                     <div class="balance_menu_item">
                         <p class="balance_menu_item_title">
-                            Account
+                            @lang('Account')
                         </p>
                         <ul class="balance_menu_item_list">
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.change.password') }}"> Change Password</a>
+                                <a href="{{ route('user.change.password') }}"> @lang('Change Password')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.profile.setting') }}"> Profile Setting</a>
+                                <a href="{{ route('user.profile.setting') }}"> @lang('Profile Setting')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.twofactor') }}"> 2FA Security</a>
+                                <a href="{{ route('user.twofactor') }}"> @lang('2FA Security')</a>
                             </li>
                             <li class="balance_menu_item_list_item">
-                                <a href="{{ route('user.logout') }}"> Logout</a>
+                                <a href="{{ route('user.logout') }}"> @lang('logout')</a>
                             </li>
                         </ul>
                     </div>
@@ -257,26 +257,26 @@
             <div class="row justify-content-center">
             	<div class="col-md-12">
             		<form id="filter-form" method="GET">
-                		<span style="margin-left: 20px;">Date from:</span>
+                		<span style="margin-left: 20px;">@lang('Date from'):</span>
                 		<input type="date"  onchange="$('#filter-form').submit();" name="filter-start" value="<?php echo (isset($_GET['filter-start']))? $_GET['filter-start'] : '2022-01-01'; ?>" min="2022-01-01" max="<?php echo date('Y-m-d')?>">
-                		<span>Date to:</span>
+                		<span>@lang('Date to'):</span>
                 		<input type="date"  onchange="$('#filter-form').submit();" name="filter-end" value="<?php echo (isset($_GET['filter-end']))? $_GET['filter-end'] : date('Y-m-d'); ?>" max="<?php echo date('Y-m-d')?>">
                 		
-                		<span>Type of operation:</span>
+                		<span>@lang('Type of operation'):</span>
                 		<select name="filter-type" onchange="$('#filter-form').submit();">
                 			<option value="0">All</option>
-                			<option value="1" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 1)? 'selected="selected"' : ''; ?>>Deposit</option>
-                			<option value="2" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 2)? 'selected="selected"' : ''; ?>>Withdraw</option>
-                			<option value="3" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 3)? 'selected="selected"' : ''; ?>>Invest</option>
-                			<option value="4" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 4)? 'selected="selected"' : ''; ?>>Win</option>
-                			<option value="5" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 5)? 'selected="selected"' : ''; ?>>Bonus</option>
+                			<option value="1" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 1)? 'selected="selected"' : ''; ?>>@lang('Deposit')</option>
+                			<option value="2" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 2)? 'selected="selected"' : ''; ?>>@lang('Withdraw')</option>
+                			<option value="3" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 3)? 'selected="selected"' : ''; ?>>@lang('Invest')</option>
+                			<option value="4" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 4)? 'selected="selected"' : ''; ?>>@lang('Win')</option>
+                			<option value="5" <?php echo (isset($_GET['filter-type']) && $_GET['filter-type'] == 5)? 'selected="selected"' : ''; ?>>@lang('Bonus')</option>
                 		</select>
                 		@if(isset($_GET['filter-type']) && $_GET['filter-type'] == 3)
-                    		<span>Invest from:</span>
+                    		<span>@lang('Invest from'):</span>
                     		<select name="filter-from" onchange="$('#filter-form').submit();">
-                    			<option value="0">All</option>
-                    			<option value="1" <?php echo (isset($_GET['filter-from']) && $_GET['filter-from'] == 1)? 'selected="selected"' : ''; ?>>Money</option>
-                    			<option value="2" <?php echo (isset($_GET['filter-from']) && $_GET['filter-from'] == 2)? 'selected="selected"' : ''; ?>>Bonus</option>
+                    			<option value="0">@lang('All')</option>
+                    			<option value="1" <?php echo (isset($_GET['filter-from']) && $_GET['filter-from'] == 1)? 'selected="selected"' : ''; ?>>@lang('Money')</option>
+                    			<option value="2" <?php echo (isset($_GET['filter-from']) && $_GET['filter-from'] == 2)? 'selected="selected"' : ''; ?>>@lang('Bonus')</option>
                     		</select>
                     	@endif
             		</form>

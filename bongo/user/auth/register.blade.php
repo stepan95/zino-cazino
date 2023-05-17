@@ -15,8 +15,8 @@
                   <div class="registration_title_h1 registration_hero_title">
                       <p>{{ __(@$registerContent->data_values->title) }}</p>
                       <div class="registration_subtitle">
-                          Register and get 
-                          <a href="#">10$ welcome bonus</a>
+                          @lang('Register and get') 
+                          <a href="#">@lang('10$ welcome bonus')</a>
                       </div>
                   </div>
                   <div class="registration_hero_bottom">

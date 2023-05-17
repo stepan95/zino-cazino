@@ -65,13 +65,13 @@
                 </div>
 </div>	
 @empty
-   @lang('No Data Found!')
+   @lang('No Data Found')
 @endforelse
 	
 </div>
 @if($games->lastPage() > 1)
     <div class="slots_btn_more main_btn_full" data-wow-duration="0.5s" data-wow-delay="0.3s" onclick="slotspage()">
-    	MORE GAMES
+    	@lang('MORE GAMES')
     </div>
 @endif
         

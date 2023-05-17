@@ -13,8 +13,8 @@
                         <div class="login_title_h1 login_hero_title">
                             <p> {{ __($loginContent->data_values->title) }}</p>
                             <div class="login_subtitle">
-                                Register and get 
-                                <a href="#">10$ welcome bonus</a>
+                                @lang('Register and get') 
+                                <a href="#">@lang('10$ welcome bonus')</a>
                             </div>
                         </div>
                         <div class="login_hero_bottom">
@@ -25,7 +25,7 @@
                                         <input type="text" value="{{ old('username') }}" name="username" class="login_hero_input login_hero_name">
                                     </label>
     
-                                    <label class="login_hero_label"> @lang('Password:')
+                                    <label class="login_hero_label"> @lang('Password'):
                                         <input type="password" name="password" class="login_hero_input login_hero_password">
                                     </label>
     

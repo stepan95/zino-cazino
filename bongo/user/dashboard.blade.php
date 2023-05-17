@@ -25,7 +25,7 @@
                       </label>
                   
                       <select class="profile_games_select" style="display: none;" name="provider" onchange="$('#currentprovider').val($(this).val()); $('#currentpage').val(1); searchprovider();">
-                        <option value="0">All Providers</option>
+                        <option value="0">@lang('All Providers')</option>
                           @forelse($groups as $group)
                           <option value="{{ $group->id }}" >{{ $group->title }}</option>
                         @empty
@@ -41,7 +41,7 @@
                     <span class="select__current">
                       <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_1.png"
                         alt="Extra Bonuses">
-                      Extra Bonuses </span>
+                      @lang('Extra bonuses') </span>
                     <div class="select__icon">
                       <img src="/assets/images/profile/arrow_right.png" alt="">
                     </div>
@@ -50,21 +50,21 @@
                     <ul class="select__wrapp">
                       <a href="/user/dashboard" class="main-tabs__item active" data-tab="1" data-choice="choosen">
                         <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_1.png" alt="Start">
-                        Extra Bonuses
+                        @lang('Extra bonuses')
                       </a>
                       <a href="/user/games/slots" class="main-tabs__item" data-tab="2" data-choice="choosen">
                         <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_2.png" alt="Games">
-                        Games
+                        @lang('Games')
                       </a>
                       <a href="/user/games/live" class="main-tabs__item " data-tab="3" data-choice="choosen">
                         <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_3.png"
                           alt="Live Casino">
-                        Live Casino
+                        @lang('Live Casino')
                       </a>
                       <a href="/user/games/lottery" class="main-tabs__item " data-tab="4" data-choice="choosen">
                         <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_4.png"
                           alt="Lottery">
-                          Lottery
+                          @lang('Lottery')
                       </a>
                     </ul>
                   </div>
@@ -119,12 +119,12 @@
                        </div>
                    </div>
                @empty
-                   @lang('No Data Found!')
+                   @lang('No Data Found')
                @endforelse
                		
                 </div>
                 <div class="slots_btn_more main_btn_full" data-wow-duration="0.5s" data-wow-delay="0.3s" onclick="slotspage()">
-                	MORE GAMES
+                	@lang('MORE GAMES')
                 </div>
             @else
                 <div class="game-group slots_items grid_items">
@@ -139,12 +139,12 @@
                                 <!-- game-card end -->
                             </div>
                         @empty
-                            @lang('No Data Found!')
+                            @lang('No Data Found')
                         @endforelse
                         
                     </div>
                     <div class="slots_btn_more main_btn_full" data-wow-duration="0.5s" data-wow-delay="0.3s" onclick="slotspage()">
-                    	MORE GAMES
+                    	@lang('MORE GAMES')
                    	</div>
             @endif
             </div>

@@ -41,7 +41,7 @@
                     <span class="select__current">
                       <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_1.png"
                         alt="Extra Bonuses">
-                      Extra Bonuses </span>
+                      @lang('Extra Bonuses') </span>
                     <div class="select__icon">
                       <img src="/assets/images/profile/arrow_right.png" alt="">
                     </div>
@@ -50,21 +50,21 @@
                     <ul class="select__wrapp">
                       <a href="/user/dashboard" class="main-tabs__item active" data-tab="1" data-choice="choosen">
                         <img class="main-tabs__item-image" src="{{ getImage('assets/images/profile/dasboard_icon_1.png') }}" alt="Start">
-                        Extra Bonuses
+                        @lang('Extra Bonuses')
                       </a>
                       <a href="/user/games/slots" class="main-tabs__item" data-tab="2" data-choice="choosen">
                         <img class="main-tabs__item-image" src="{{ getImage('assets/images/profile/dasboard_icon_2.png') }}" alt="Games">
-                        Games
+                        @lang('Games')
                       </a>
                       <a href="/user/games/live" class="main-tabs__item " data-tab="3" data-choice="choosen">
                         <img class="main-tabs__item-image" src="{{ getImage('assets/images/profile/dasboard_icon_3.png') }}"
                           alt="Live Casino">
-                        Live Casino
+                        @lang('Live Casino')
                       </a>
                       <a href="/user/games/lottery" class="main-tabs__item " data-tab="4" data-choice="choosen">
                         <img class="main-tabs__item-image" src="{{ getImage('assets/images/profile/dasboard_icon_4.png') }}"
                           alt="Lottery">
-                          Lottery
+                          @lang('Lottery')
                       </a>
                     </ul>
                   </div>
@@ -119,12 +119,12 @@
                        </div>
                    </div>
                @empty
-                   @lang('No Data Found!')
+                   @lang('No Data Found')
                @endforelse
                		
                 </div>
                 <div class="slots_btn_more main_btn_full" data-wow-duration="0.5s" data-wow-delay="0.3s" onclick="slotspage()">
-                	MORE GAMES
+                	@lang('MORE GAMES')
                 </div>
             @else
                 <div class="game-group slots_items grid_items">
@@ -139,12 +139,12 @@
                                 <!-- game-card end -->
                             </div>
                         @empty
-                            @lang('No Data Found!')
+                            @lang('No Data Found')
                         @endforelse
                         
                     </div>
                     <div class="slots_btn_more main_btn_full" data-wow-duration="0.5s" data-wow-delay="0.3s" onclick="slotspage()">
-                    	MORE GAMES
+                    	@lang('MORE GAMES')
                    	</div>
             @endif
             </div>
@@ -153,14 +153,14 @@
                     <div class="modal-dialog" role="document" style="width: 99%; max-width: 95%; margin-top: 0; margin-bottom: 0;">
                         <div class="modal-content section--bg">
                             <div class="modal-header">
-                                <h6 class="modal-title method-name" id="exampleModalLabel">Payment By Okipays</h6>
+                                <h6 class="modal-title method-name" id="exampleModalLabel">@lang('Payment By Okipays')</h6>
                                 <a href="javascript:void(0)" class="close button-for-reload-balance" data-dismiss="modal" aria-label="Close" onclick="jQuery('#geme-iframe-modal').attr('src','');">
                                     <span aria-hidden="true">×</span>
                                 </a>
                             </div>
                             <div id="fullscreen">
                                 <a href="javascript:void(0)" class="mobile-exit close button-for-reload-balance" data-dismiss="modal" aria-label="Close" onclick="jQuery('#geme-iframe-modal').attr('src','');  $.fullscreen.exit(); jQuery('#exampleModal').close();" style="display: none;"></a>
-                                <div class="mobile-landscape" style="display: none;">Please, use Landscape!</div>
+                                <div class="mobile-landscape" style="display: none;">@lang('Please, use Landscape!')</div>
                                 <iframe style="width: 100%;" src="" id="geme-iframe-modal">
                                 </iframe>
                                 <div style="text-align: right;"><a href="#" class="requestfullscreen" style="color: white;">Click to open it in fullscreen</a><a href="#" class="exitfullscreen" style="display: none; color: white; margin-right: 20px;">Click to exit fullscreen</a></div>
@@ -222,41 +222,41 @@
           <div class="latest__wrapper">
             <div class="latest__top">
               <div class="latest_title title_h2">
-                Latest bet & Race
+                @lang('Latest bet & Race')
               </div>
               <div class="latest__btns">
                 <button class="latest_btn main_btn active">
-                  Latest bets
+                  @lang('Latest bets')
                 </button>
                 <button class="latest_btn main_btn">
-                  High rollers
+                  @lang('High rollers')
                 </button>
 
                 <button class="latest_btn main_btn">
-                  Wager contest
+                  @lang('Wager contest')
                 </button>
               </div>
             </div>
             <div class="latest_table_wrapper latest_table_desctop">
               <div class="latest_table_grid latest_table_grid_heading">
-                <div class="latest_table_item latest_table_headind">GAME</div>
-                <div class="latest_table_item latest_table_headind">Player</div>
-                <div class="latest_table_item latest_table_headind">Bet Amount</div>
-                <div class="latest_table_item latest_table_headind">Multiplier</div>
-                <div class="latest_table_item latest_table_headind">Profit Amount</div>
+                <div class="latest_table_item latest_table_headind">@lang('GAME')</div>
+                <div class="latest_table_item latest_table_headind">@lang('Player')</div>
+                <div class="latest_table_item latest_table_headind">@lang('Bet Amount')</div>
+                <div class="latest_table_item latest_table_headind">@lang('Multiplier')</div>
+                <div class="latest_table_item latest_table_headind">@lang('Profit Amount')</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">Live - Sweet Bonanza CandyL.</div>
+                <div class="latest_table_item latest_table_lvl">@lang('Live - Sweet Bonanza CandyL.')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_1.png') }}"
-                    alt=""><span>Cherry</span></div>
+                    alt=""><span>@lang('Cherry')</span></div>
                 <div class="latest_table_item latest_table_points">47999.1936</div>
                 <div class="latest_table_item latest_table_bonus">0.41 x</div>
                 <div class="latest_table_item latest_table_cashback">47999.1936</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">Keno</div>
+                <div class="latest_table_item latest_table_lvl">@lang('Keno')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_2.png') }}"
-                    alt=""><span>Raspberry</span></div>
+                    alt=""><span>@lang('Raspberry')</span></div>
                 <div class="latest_table_item latest_table_points">1.60001600</div>
                 <div class="latest_table_item latest_table_bonus">2.51 x</div>
                 <div class="latest_table_item latest_table_cashback">1.60001600</div>
@@ -264,64 +264,64 @@
               <div class="latest_table_grid latest_table_grid_content">
                 <div class="latest_table_item latest_table_lvl">Hash Dice</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_3.png') }}"
-                    alt=""><span>Apple</span></div>
+                    alt=""><span>@lang('Apple')</span></div>
                 <div class="latest_table_item latest_table_points">1.97500000</div>
                 <div class="latest_table_item latest_table_bonus">0.21 x</div>
                 <div class="latest_table_item latest_table_cashback">1.97500000</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">Egyptian</div>
+                <div class="latest_table_item latest_table_lvl">@lang('Egyptian')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_4.png') }}"
-                    alt=""><span>Kiwi</span></div>
+                    alt=""><span>@lang('Kiwi')</span></div>
                 <div class="latest_table_item latest_table_points">0.00172668</div>
                 <div class="latest_table_item latest_table_bonus">0.89 x</div>
                 <div class="latest_table_item latest_table_cashback">0.00172668</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">House of Fun</div>
-                <div class="latest_table_item latest_table_status item_hidden"><span>HIDDEN</span></div>
+                <div class="latest_table_item latest_table_lvl">@lang('House of Fun')</div>
+                <div class="latest_table_item latest_table_status item_hidden"><span>@lang('HIDDEN')</span></div>
                 <div class="latest_table_item latest_table_points">47999.1936</div>
                 <div class="latest_table_item latest_table_bonus">0.51 x</div>
                 <div class="latest_table_item latest_table_cashback">47999.1936</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">CoinFlip</div>
+                <div class="latest_table_item latest_table_lvl">@lang('CoinFlip')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_6.png') }}"
-                    alt=""><span>Pear</span></div>
+                    alt=""><span>@lang('Pear')</span></div>
                 <div class="latest_table_item latest_table_points">1.60001600</div>
                 <div class="latest_table_item latest_table_bonus">3.55 x</div>
                 <div class="latest_table_item latest_table_cashback">1.60001600</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">Gems Bonanza</div>
+                <div class="latest_table_item latest_table_lvl">@lang('Gems Bonanza')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_7.png') }}"
-                    alt=""><span>Peach</span></div>
+                    alt=""><span>@lang('Peach')</span></div>
                 <div class="latest_table_item latest_table_points">1.97500000</div>
                 <div class="latest_table_item latest_table_bonus">0.39 x</div>
                 <div class="latest_table_item latest_table_cashback">1.97500000</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">No Commission</div>
+                <div class="latest_table_item latest_table_lvl">@lang('No Commission')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_8.png') }}"
-                    alt=""><span>Pomegranate</span>
+                    alt=""><span>@lang('Pomegranate')</span>
                 </div>
                 <div class="latest_table_item latest_table_points">0.00172668</div>
                 <div class="latest_table_item latest_table_bonus">0.22 x</div>
                 <div class="latest_table_item latest_table_cashback">0.00172668</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">Queen of Gold</div>
+                <div class="latest_table_item latest_table_lvl">@lang('Queen of Gold')</div>
                 <div class="latest_table_item latest_table_status"><img src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_9.png') }}"
-                    alt=""><span>Watermelon</span>
+                    alt=""><span>@lang('Watermelon')</span>
                 </div>
                 <div class="latest_table_item latest_table_points">47999.1936</div>
                 <div class="latest_table_item latest_table_bonus">1.11 x</div>
                 <div class="latest_table_item latest_table_cashback">47999.1936</div>
               </div>
               <div class="latest_table_grid latest_table_grid_content">
-                <div class="latest_table_item latest_table_lvl">No Commission Speed Bacca.</div>
+                <div class="latest_table_item latest_table_lvl">@lang('No Commission Speed Bacca.')</div>
                 <div class="latest_table_item latest_table_status"><img
-                    src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_10.png') }}" alt=""><span>Vip Lemon</span>
+                    src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_10.png') }}" alt=""><span>@lang('Vip Lemon')</span>
                 </div>
                 <div class="latest_table_item latest_table_points">1.60001600</div>
                 <div class="latest_table_item latest_table_bonus">0.24 x</div>
@@ -331,84 +331,84 @@
             <div class="latest_table_mobile">
               <div class="latest_table_mobile__row">
                   <div class="latest_table_mobile_col">
-                    <div class="latest_table_item ">GAME</div>
-                      <div class="latest_table_item latest_table_lvl">Live - Sweet Bonanza CandyL.
+                    <div class="latest_table_item ">@lang('GAME')</div>
+                      <div class="latest_table_item latest_table_lvl">@lang('Live - Sweet Bonanza CandyL.')
                       </div>
                   </div>
                   <div class="latest_table_mobile_col">
-                    <div class="latest_table_item ">Player</div>
+                    <div class="latest_table_item ">@lang('Player')</div>
                       <div class="latest_table_item latest_table_status"><img
-                              src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_1.png') }}" alt=""><span>Cherry</span>
+                              src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_1.png') }}" alt=""><span>@lang('Cherry')</span>
                       </div>
                   </div>
                   <div class="latest_table_mobile_col">
-                    <div class="latest_table_item ">Bet Amount</div>
+                    <div class="latest_table_item ">@lang('Bet Amount')</div>
                       <div class="latest_table_item latest_table_points">47999.1936
                       </div>
                   </div>
                   <div class="latest_table_mobile_col">
-                    <div class="latest_table_item ">Multiplier</div>
+                    <div class="latest_table_item ">@lang('Multiplier')</div>
                       <div class="latest_table_item latest_table_bonus">0.41 x
                       </div>
                   </div>
                   <div class="latest_table_mobile_col">
-                    <div class="latest_table_item ">Profit Amount</div>
+                    <div class="latest_table_item ">@lang('Profit Amount')</div>
                       <div class="latest_table_item latest_table_cashback">47999.1936
                       </div>
                   </div>
               </div>
               <div class="latest_table_mobile__row">
                 <div class="latest_table_mobile_col">
-                  <div class="latest_table_item ">GAME</div>
-                    <div class="latest_table_item latest_table_lvl">Live - Sweet Bonanza CandyL.
+                  <div class="latest_table_item ">@lang('GAME')</div>
+                    <div class="latest_table_item latest_table_lvl">@lang('Live - Sweet Bonanza CandyL.')
                     </div>
                 </div>
                 <div class="latest_table_mobile_col">
-                  <div class="latest_table_item ">Player</div>
+                  <div class="latest_table_item ">@lang('Player')</div>
                     <div class="latest_table_item latest_table_status"><img
                             src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_2.png') }}" alt=""><span>Cherry</span>
                     </div>
                 </div>
                 <div class="latest_table_mobile_col">
-                  <div class="latest_table_item ">Bet Amount</div>
+                  <div class="latest_table_item ">@lang('Bet Amount')</div>
                     <div class="latest_table_item latest_table_points">47999.1936
                     </div>
                 </div>
                 <div class="latest_table_mobile_col">
-                  <div class="latest_table_item ">Multiplier</div>
+                  <div class="latest_table_item ">@lang('Multiplier')</div>
                     <div class="latest_table_item latest_table_bonus">0.41 x
                     </div>
                 </div>
                 <div class="latest_table_mobile_col">
-                  <div class="latest_table_item ">Profit Amount</div>
+                  <div class="latest_table_item ">@lang('Profit Amount')</div>
                     <div class="latest_table_item latest_table_cashback">47999.1936
                     </div>
                 </div>
             </div>
             <div class="latest_table_mobile__row">
               <div class="latest_table_mobile_col">
-                <div class="latest_table_item ">GAME</div>
-                  <div class="latest_table_item latest_table_lvl">Live - Sweet Bonanza CandyL.
+                <div class="latest_table_item ">@lang('GAME')</div>
+                  <div class="latest_table_item latest_table_lvl">@lang('Live - Sweet Bonanza CandyL.')
                   </div>
               </div>
               <div class="latest_table_mobile_col">
-                <div class="latest_table_item ">Player</div>
+                <div class="latest_table_item ">@lang('Player')</div>
                   <div class="latest_table_item latest_table_status"><img
-                          src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_3.png') }}" alt=""><span>Cherry</span>
+                          src="{{ asset('assets/images/frontend/homepage/latest_image/about_table_item_3.png') }}" alt=""><span>@lang('Cherry')</span>
                   </div>
               </div>
               <div class="latest_table_mobile_col">
-                <div class="latest_table_item ">Bet Amount</div>
+                <div class="latest_table_item ">@lang('Bet Amount')</div>
                   <div class="latest_table_item latest_table_points">47999.1936
                   </div>
               </div>
               <div class="latest_table_mobile_col">
-                <div class="latest_table_item ">Multiplier</div>
+                <div class="latest_table_item ">@lang('Multiplier')</div>
                   <div class="latest_table_item latest_table_bonus">0.41 x
                   </div>
               </div>
               <div class="latest_table_mobile_col">
-                <div class="latest_table_item ">Profit Amount</div>
+                <div class="latest_table_item ">@lang('Profit Amount')</div>
                   <div class="latest_table_item latest_table_cashback">47999.1936
                   </div>
               </div>

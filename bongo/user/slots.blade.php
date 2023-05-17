@@ -10,10 +10,10 @@
             <div class="dasboard__wrapper">
                 <div class="dasboard__top">
                     <div class="dasboard__buttons">
-                        <?php  if(Auth::user()->username != 'dadaba') { ?><a href="/user/dashboard" class="dasboard__item dasboard__bonuses">Extra Bonuses</a><?php } ?>
-                        <a href="/user/games/slots" class="dasboard__item <?php echo ('slots' == $activecat)? 'active': '' ?> dasboard__slots">Games</a>
-                        <a href="/user/games/live" class="dasboard__item <?php echo ('live' == $activecat)? 'active': '' ?> dasboard__live">Live Casino</a>
-                        <a href="/user/games/lottery" class="dasboard__item <?php echo ('lottery' == $activecat)? 'active': '' ?> dasboard__lottery">Lottery</a>
+                        <?php  if(Auth::user()->username != 'dadaba') { ?><a href="/user/dashboard" class="dasboard__item dasboard__bonuses">@lang('Extra Bonuses')</a><?php } ?>
+                        <a href="/user/games/slots" class="dasboard__item <?php echo ('slots' == $activecat)? 'active': '' ?> dasboard__slots">@lang('Games')</a>
+                        <a href="/user/games/live" class="dasboard__item <?php echo ('live' == $activecat)? 'active': '' ?> dasboard__live">@lang('Live Casino')</a>
+                        <a href="/user/games/lottery" class="dasboard__item <?php echo ('lottery' == $activecat)? 'active': '' ?> dasboard__lottery">@lang('Lottery')</a>
                     </div>
                     <div class="dasboard_cat dasboard_cat__desctop">
                             <div class="dasboard_cat__wrapper">
@@ -30,13 +30,13 @@
                     <div class="select__header">
                         <?php  if(Auth::user()->username != 'dadaba') { ?>
                             <?php if($activecat == 'dashboard') { ?>
-                                <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_2.png" alt="Slots">Slots</span>
+                                <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_2.png" alt="Slots">@lang('Slots')</span>
                                <?php } elseif($activecat == 'slots') { ?>   
-                                   <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_3.png" alt="Games">Games</span>
+                                   <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_3.png" alt="Games">@lang('Games')</span>
                                <?php } elseif($activecat == 'lottery') { ?>   
-                                   <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_4.png" alt="Lottery">Lottery</span>
+                                   <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_4.png" alt="Lottery">@lang('Lottery')</span>
                                <?php } else { ?>
-                                   <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_1.png" alt="Extra Bonuses">Extra Bonuses</span>
+                                   <span class="select__current"><img  loading="lazy"class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_1.png" alt="Extra Bonuses">@lang('Extra Bonuses')</span>
                                <?php } ?>
                        <?php } ?>
                       <div class="select__icon">
@@ -47,22 +47,22 @@
                         <ul class="select__wrapp">
                              <a href="/user/dashboard" class="main-tabs__item" data-tab="1" data-choice="choosen">
                               <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_1.png" alt="Start">
-                              Extra Bonuses
+                              @lang('Extra Bonuses')
                             </a>
                             
                             <a href="/user/games/slots" class="main-tabs__item <?php echo ('slots' == $activecat)? 'active': '' ?>" data-tab="2" data-choice="choosen">
                               <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_2.png" alt="Games">
-                              Games
+                              @lang('Games')
                             </a>
                             <a href="/user/games/live" class="main-tabs__item <?php echo ('live' == $activecat)? 'active': '' ?>" data-tab="3" data-choice="choosen">
                               <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_3.png"
                                 alt="Live Casino">
-                              Live Casino
+                              @lang('Live Casino')
                             </a>
                             <a href="/user/games/lottery" class="main-tabs__item <?php echo ('lottery' == $activecat)? 'active': '' ?>" data-tab="4" data-choice="choosen">
                               <img class="main-tabs__item-image" src="/assets/images/profile/dasboard_icon_4.png"
                                 alt="Lottery">
-                                Lottery
+                                @lang('Lottery')
                             </a>
                           </ul>
                     </div>
@@ -73,7 +73,7 @@
                       </label>
                   
                       <select class="profile_games_select" style="display: none;" name="provider" onchange="$('#currentprovider').val($(this).val()); $('#currentpage').val(1); slgsearchprovider();">
-                        <option value="0">All Providers</option>
+                        <option value="0">@lang('All Providers')</option>
                          @forelse($providers as $provider)
                         <option value="{{ $provider->provider }}" <?php echo (isset($_GET['provider']) && $provider->provider == $_GET['provider'])? 'selected="selected"': '' ?>>
                             {{ $provider->provider }}</span>
@@ -182,7 +182,7 @@
             </div>
             	@if($games->lastPage() > 1)
 				<div class="slots_btn_more main_btn_full" data-wow-duration="0.5s" data-wow-delay="0.3s" onclick="slggamepage()">
-                	MORE GAMES
+                	@lang('MORE GAMES')
                	</div>
                	@endif
            	
@@ -197,14 +197,14 @@
     <div class="modal-dialog" role="document" style="width: 99%; max-width: 95%; margin-top: 0; margin-bottom: 0;">
         <div class="modal-content section--bg" style="background-color: #000;">
             <div class="modal-header">
-                <h6 class="modal-title method-name" id="exampleModalLabel">Payment By Okipays</h6>
+                <h6 class="modal-title method-name" id="exampleModalLabel">@lang('Payment By Okipays')</h6>
                 <a href="javascript:void(0)" class="close button-for-reload-balance" data-dismiss="modal" aria-label="Close" onclick="jQuery('#geme-iframe-modal').attr('src','');">
                     <span aria-hidden="true">×</span>
                 </a>
             </div>
             <div id="fullscreen">
             	<a href="javascript:void(0)" class="mobile-exit close button-for-reload-balance" data-dismiss="modal" aria-label="Close" onclick="jQuery('#geme-iframe-modal').attr('src','');  $.fullscreen.exit(); jQuery('#exampleModal').close();" style="display: none;"></a>
-            	<div class="mobile-landscape" style="display: none;">Please, use Landscape!</div>
+            	<div class="mobile-landscape" style="display: none;">@lang('Please, use Landscape!')</div>
                 <iframe style="width: 100%;" src="" id="geme-iframe-modal" allow="fullscreen">
                 </iframe>
                 <div style="text-align: right;"><a href="#" class="requestfullscreen" style="color: white;">Click to open it in fullscreen</a><a href="#" class="exitfullscreen" style="display: none; color: white; margin-right: 20px;">Click to exit fullscreen</a></div>
@@ -218,7 +218,7 @@
     <div class="modal-dialog" role="document" style="width: 99%; max-width: 500px; margin-top: 0; margin-bottom: 0;">
         <div class="modal-content section--bg" style="background-color: #000;">
             <div class="modal-header">
-                <h6 class="modal-title method-name" id="exampleModalLabel">Payment By Okipays</h6>
+                <h6 class="modal-title method-name" id="exampleModalLabel">@lang('Payment By Okipays')</h6>
                 <a href="javascript:void(0)" class="close button-for-reload-balance" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </a>
@@ -241,7 +241,7 @@
                 </a>
             </div>
             <div id="fullscreen">
-                <p>You have <span class="remain_freespins"></span> freespins!</p>
+                <p>@lang('You have') <span class="remain_freespins"></span> @lang('freespins!')</p>
                 <a onclick="
                 	     jQuery('#exampleModalFreespin .close').trigger('click');
                 	     console.log('/user/setFreespins/'+$(this).attr('data-uuid'));

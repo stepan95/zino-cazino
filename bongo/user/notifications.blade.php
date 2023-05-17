@@ -35,7 +35,7 @@
                                          class="balance_right_image">
                                     <div class="balance_right_item_description">
                                         <p class="balance_right_item_description_name">
-                                            @lang('Total Deposit')
+                                            @lang('Total deposit')
                                         </p>
                                         <p class="balance_right_item_description_money">
                                             <span
@@ -48,7 +48,7 @@
                                          class="balance_right_image">
                                     <div class="balance_right_item_description">
                                         <p class="balance_right_item_description_name">
-                                            @lang('Total Withdraw')
+                                            @lang('Total withdraw')
                                         </p>
                                         <p class="balance_right_item_description_money">
                                             <span
@@ -61,7 +61,7 @@
                                          class="balance_right_image">
                                     <div class="balance_right_item_description">
                                         <p class="balance_right_item_description_name">
-                                            @lang('Total Bonus')
+                                            @lang('Total bonus')
                                         </p>
                                         <p class="balance_right_item_description_money">
                                             <span
@@ -74,7 +74,7 @@
                                          class="balance_right_image">
                                     <div class="balance_right_item_description">
                                         <p class="balance_right_item_description_name">
-                                            Zino Coins
+                                            @lang('ZINO COINS')
                                         </p>
                                         <p class="balance_right_item_description_money">
                                             <span
@@ -86,32 +86,32 @@
                             <div class="balance_menu balance_menu_desctop">
                                 <div class="balance_menu_item">
                                     <a href="{{ route('user.home') }}" class="balance_menu_item_title">
-                                        Dashboard
+                                        @lang('Dashboard')
                                     </a>
                                 </div>
                                 <div class="balance_menu_item">
                                     <p class="balance_menu_item_title">
-                                        deposit
+                                        @lang('Deposit')
                                     </p>
                                     <ul class="balance_menu_item_list">
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.deposit') }}"> Deposit Money</a>
+                                            <a href="{{ route('user.deposit') }}"> @lang('Deposit money')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.deposit.history') }}"> History</a>
+                                            <a href="{{ route('user.deposit.history') }}"> @lang('History')</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="balance_menu_item">
                                     <p class="balance_menu_item_title">
-                                        Withdraw
+                                        @lang('Withdraw')
                                     </p>
                                     <ul class="balance_menu_item_list">
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.withdraw') }}"> Withdraw</a>
+                                            <a href="{{ route('user.withdraw') }}"> @lang('Withdraw')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.withdraw.history') }}">Withdraw History</a>
+                                            <a href="{{ route('user.withdraw.history') }}">@lang('Withdraw History')</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -122,52 +122,52 @@
                                 </div>
                                 <div class="balance_menu_item">
                                     <p class="balance_menu_item_title">
-                                        Reports
+                                        @lang('reports')
                                     </p>
                                     <ul class="balance_menu_item_list">
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.gameLog') }}"> Game Log</a>
+                                            <a href="{{ route('user.gameLog') }}"> @lang('Game Log')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.commissionLog') }}"> Commission Log</a>
+                                            <a href="{{ route('user.commissionLog') }}"> @lang('Commission Log')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.transactions') }}"> Transactions</a>
+                                            <a href="{{ route('user.transactions') }}"> @lang('Transactions')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.notifications') }}"> Notifications</a>
+                                            <a href="{{ route('user.notifications') }}"> @lang('Notifications')</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="balance_menu_item">
                                     <p class="balance_menu_item_title">
-                                        Support
+                                        @lang('Support')
                                     </p>
                                     <ul class="balance_menu_item_list">
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('ticket.open') }}"> Create New</a>
+                                            <a href="{{ route('ticket.open') }}"> @lang('Create New')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('ticket') }}"> My Tickets</a>
+                                            <a href="{{ route('ticket') }}"> @lang('My Tickets')</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="balance_menu_item">
                                     <p class="balance_menu_item_title">
-                                        Account
+                                        @lang('Account')
                                     </p>
                                     <ul class="balance_menu_item_list">
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.change.password') }}"> Change Password</a>
+                                            <a href="{{ route('user.change.password') }}"> @lang('Change Password')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.profile.setting') }}"> Profile Setting</a>
+                                            <a href="{{ route('user.profile.setting') }}"> @lang('Profile Setting')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.twofactor') }}"> 2FA Security</a>
+                                            <a href="{{ route('user.twofactor') }}"> @lang('2FA Security')</a>
                                         </li>
                                         <li class="balance_menu_item_list_item">
-                                            <a href="{{ route('user.logout') }}"> Logout</a>
+                                            <a href="{{ route('user.logout') }}"> @lang('logout')</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -186,27 +186,27 @@
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                deposit
+                                @lang('Deposit')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.deposit') }}"> Deposit Money</a>
+                                    <a href="{{ route('user.deposit') }}"> @lang('Deposit money')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.deposit.history') }}"> History</a>
+                                    <a href="{{ route('user.deposit.history') }}"> @lang('History')</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Withdraw
+                                @lang('Withdraw')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.withdraw') }}"> Withdraw</a>
+                                    <a href="{{ route('user.withdraw') }}"> @lang('Withdraw')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.withdraw.history') }}">Withdraw History</a>
+                                    <a href="{{ route('user.withdraw.history') }}">@lang('Withdraw History')</a>
                                 </li>
                             </ul>
                         </div>
@@ -217,52 +217,52 @@
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Reports
+                                @lang('reports')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.gameLog') }}"> Game Log</a>
+                                    <a href="{{ route('user.gameLog') }}"> @lang('Game Log')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.commissionLog') }}"> Commission Log</a>
+                                    <a href="{{ route('user.commissionLog') }}"> @lang('Commission Log')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.transactions') }}"> Transactions</a>
+                                    <a href="{{ route('user.transactions') }}"> @lang('Transactions')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.notifications') }}"> Notifications</a>
+                                    <a href="{{ route('user.notifications') }}"> @lang('Notifications')</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Support
+                                @lang('Support')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('ticket.open') }}"> Create New</a>
+                                    <a href="{{ route('ticket.open') }}"> @lang('Create New')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('ticket') }}"> My Tickets</a>
+                                    <a href="{{ route('ticket') }}"> @lang('My Tickets')</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="balance_menu_item">
                             <p class="balance_menu_item_title">
-                                Account
+                                @lang('Account')
                             </p>
                             <ul class="balance_menu_item_list">
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.change.password') }}"> Change Password</a>
+                                    <a href="{{ route('user.change.password') }}"> @lang('Change Password')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.profile.setting') }}"> Profile Setting</a>
+                                    <a href="{{ route('user.profile.setting') }}"> @lang('Profile Setting')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.twofactor') }}"> 2FA Security</a>
+                                    <a href="{{ route('user.twofactor') }}"> @lang('2FA Security')</a>
                                 </li>
                                 <li class="balance_menu_item_list_item">
-                                    <a href="{{ route('user.logout') }}"> Logout</a>
+                                    <a href="{{ route('user.logout') }}"> @lang('logout')</a>
                                 </li>
                             </ul>
                         </div>

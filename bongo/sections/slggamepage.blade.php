@@ -64,5 +64,5 @@
                 </div>
 </div>
 @empty
-   @lang('No Data Found!')
+   @lang('No Data Found')
 @endforelse

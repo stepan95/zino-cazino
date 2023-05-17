@@ -32,8 +32,8 @@
                                     </div>
                                     <div class="avatar-edit mt-3">
                                         <input type='file' class="profilePicUpload" id="profilePicUpload1" name="image" accept="image/*" />
-                                        <label for="profilePicUpload1">Upload Photo</label>
-                                        <p>At least 300px x 300px PNG or JPG file.</p>
+                                        <label for="profilePicUpload1">@lang('Upload Photo')</label>
+                                        <p>@lang('At least 300px x 300px PNG or JPG file.')</p>
                                     </div>
                                 </div>
                             </div>
@@ -41,13 +41,13 @@
 
                             <div class="row mt-5">
                                 <div class="form-group col-sm-6">
-                                    <label for="InputFirstname" class="col-form-label">@lang('First Name:')</label>
+                                    <label for="InputFirstname" class="col-form-label">@lang('First Name'):</label>
                                     <input type="text" class="form-control" id="InputFirstname" name="firstname"
                                            placeholder="@lang('First Name')" value="{{$user->firstname}}" >
                                 </div>
 
                                 <div class="form-group col-sm-6">
-                                    <label for="lastname" class="col-form-label">@lang('Last Name:')</label>
+                                    <label for="lastname" class="col-form-label">@lang('Last Name'):</label>
                                     <input type="text" class="form-control" id="lastname" name="lastname"
                                            placeholder="@lang('Last Name')" value="{{$user->lastname}}">
                                 </div>
@@ -57,7 +57,7 @@
 
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label for="email" class="col-form-label">@lang('E-mail Address:')</label>
+                                    <label for="email" class="col-form-label">@lang('E-mail Address'):</label>
                                     <input type="email" class="form-control" id="email" name="email" placeholder="@lang('E-mail Address')" value="{{$user->email}}" required readonly>
                                 </div>
 
@@ -71,19 +71,19 @@
 
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label for="address" class="col-form-label">@lang('Username:')</label>
+                                    <label for="address" class="col-form-label">@lang('Username'):</label>
                                     <input type="text" class="form-control" id="username" name="username"
                                            placeholder="@lang('Username')" value="{{$user->username}}" required="">
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label for="state" class="col-form-label">@lang('Country:')</label>
+                                    <label for="state" class="col-form-label">@lang('Country'):</label>
                                     <input type="text" class="form-control" id="country" name="country" placeholder="@lang('Country')" value="{{$user->address->country}}" required="">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label for="address" class="col-form-label">@lang('Address:')</label>
+                                    <label for="address" class="col-form-label">@lang('Address'):</label>
                                     <input type="text" class="form-control" id="address" name="address"
                                            placeholder="@lang('Address')" value="{{$user->address->address}}" required="">
                                 </div>
@@ -96,12 +96,12 @@
 
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label for="zip" class="col-form-label">@lang('Zip Code:')</label>
+                                    <label for="zip" class="col-form-label">@lang('Zip Code'):</label>
                                     <input type="text" class="form-control" id="zip" name="zip" placeholder="@lang('Zip Code')" value="{{$user->address->zip}}" required="">
                                 </div>
 
                                 <div class="form-group col-sm-6">
-                                    <label for="city" class="col-form-label">@lang('City:')</label>
+                                    <label for="city" class="col-form-label">@lang('City'):</label>
                                     <input type="text" class="form-control" id="city" name="city"
                                            placeholder="@lang('City')" value="{{$user->address->city}}" required="">
                                 </div>
