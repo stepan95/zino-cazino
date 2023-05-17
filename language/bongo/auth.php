@@ -15,9 +15,9 @@ return [
     bongo
     */ 
 
-    'failed' => 'These credentials do not match our records.',
-    'password' => 'The provided password is incorrect.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    // 'failed' => 'These credentials do not match our records.',
+    // 'password' => 'The provided password is incorrect.',
+    // 'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
     // about.blade
     'Levels' => 'Levels',
@@ -214,23 +214,227 @@ return [
     'Exchanger' => 'Exchanger',
     'Very soon' => 'Very soon',
     'zinocoins_exchanger_description' => 'Here you can apply order to exchange your own Zino coins for Zino tokens and NFT tokens, which will be presented in the gallery. When placing an application, you can choose the NFT token you like for exchange. Our database mainly contains paintings.',
+
+    // bongo/layouts
+    // frontend.blade
+    'Dashboard' => 'Dashboard',
+    'Total deposit' => 'Total deposit',
+    'Total withdraw' => 'Total withdraw',
+    'Total bonus' => 'Total bonus',
+    'Deposit' => 'Deposit',
+    'Deposit money' => 'Deposit money',
+    'History' => 'History',
+    'Withdraw' => 'Withdraw',
+    'Withdraw History' => 'Withdraw History',
+    'Referrals' => 'Referrals',
+    'Game Log' => 'Game Log',
+    'Commission Log' => 'Commission Log',
+    'Transactions' => 'Transactions',
+    'Support' => 'Support',
+    'Create New' => 'Create New',
+    'My Tickets' => 'My Tickets',
+    'Account' => 'Account',
+    'Change Password' => 'Change Password',
+    'Profile Setting' => 'Profile Setting',
+    'Log out' => 'Log out',
+    'No notification found' => 'No notification found',
+    'View all notification' => 'View all notification',
+    'Money' => 'Money',
+    'Bonus' => 'Bonus',
+    'Wagering' => 'Wagering',
+    'Available to Withdraw' => 'Available to Withdraw',
+    'Extra bonuses' => 'Extra bonuses',
+    'Games' => 'Games',
+    'Live Casino' => 'Live Casino',
+    'Lottery' => 'Lottery',
+    'News' => 'News',
+    'SIGN IN' => 'SIGN IN',
+    'level' => 'level',
+    'Available to Withdraw' => '',
+    'windraw' => 'windraw',
+    'reports' => 'reports',
+    'logout' => 'logout',
+    'Register' => 'Register',
+    'Suport 24/7' => 'Suport 24/7',
+    'crypto_text' => 'Tether (USDT), Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), TRON (TRX), Binance coins (BNB, Binance USD (BUSD)), USD Coin (USDC)',
+    'footer_top_descr' => 'All rights & Copy right reserved by Bongo.land',
+    '24 /7 Online support' => '24 /7 Online support',
+    'Loyalty program' => 'Loyalty program',
+    'footer_copy_1' => 'Copyright © 2023',
+    'footer_copy_2' => 'bongo.land',
+    'footer_copy_3' => 'is owned and operated by Algo Group is incorporated under the laws of Curacao with company registration number 157136 and having its registered address at Scharlooweg 27, Willemstad, Curaçao. Algo Group is operating under E-gaming licenses of Curacao(8048/JAZ2020-17).',
+    'Extra' => 'Extra',
+    'HOME' => 'HOME',
+    'live' => 'live',
+
+
+    // master.blade
+    '2FA Security' => '2FA Security',
+    'Notifications' => 'Notifications',
+    'Reset' => 'Reset',
+    'The result is' => 'The result is',
+    'Modal title' => 'Modal title',
+    'Close' => 'Close',
+    'Save changes' => 'Save changes',
+
+
+
+    // bongo/partials
+    // Нема шаблонів до перекладу
+
+    // bongo/sections
+    // game.blade
+    'Latest bet & Race' => 'Latest bet & Race',
+    'Latest bets' => 'Latest bets',
+    'High rollers' => 'High rollers',
+    'Wager contest' => 'Wager contest',
+    'GAME' => 'GAME',
+    'Bet Amount' => 'Bet Amount',
+    'Multiplier' => 'Multiplier',
+    'Profit Amount' => 'Profit Amount',
+    'Live - Sweet Bonanza CandyL.' => 'Live - Sweet Bonanza CandyL.',
+    'Cherry' => 'Cherry',
+    'Keno' => 'Keno',
+    'Raspberry' => 'Raspberry',
+    'Apple' => 'Apple',
+    'Egyptian' => 'Egyptian',
+    'Kiwi' => 'Kiwi',
+    'House of Fun' => 'House of Fun',
+    'HIDDEN' => 'HIDDEN',
+    'CoinFlip' => 'CoinFlip',
+    'Pear' => 'Pear',
+    'Gems Bonanza' => 'Gems Bonanza',
+    'Peach' => 'Peach',
+    'No Commission' => 'No Commission',
+    'Pomegranate' => 'Pomegranate',
+    'Queen of Gold' => 'Queen of Gold',
+    'Watermelon' => 'Watermelon',
+    'No Commission Speed Bacca.' => 'No Commission Speed Bacca.',
+    'Vip Lemon' => 'Vip Lemon',
+
+    // trx_win.blade
+    'User name' => 'User name',
+
+
+    // bongo/user
+    // commissionLog.blade
+    'Profile' => 'Profile',
+
+    // dashboard.blade
+    'All Providers' => 'All Providers',
+
+    // deposit_history.blade
+    'Gateway' => 'Gateway',
+    'Time' => 'Time',
+    'Deposit via admin' => 'Deposit via admin',
+    'Complete' => 'Complete',
+    'Pending' => 'Pending',
+    'Cancel' => 'Cancel',
+    'No results found' => 'No results found',
+    'Charge' => 'Charge',
+    'After Charge' => 'After Charge',
+    'Conversion Rate' => 'Conversion Rate',
+    'Payable Amount' => 'Payable Amount',
+
+    // password.blade
+    'Reset Password' => 'Reset Password',
+    'Enter your current password and new password' => 'Enter your current password and new password',
+
+    // profile_setting.blade
+    'Upload Photo' => 'Upload Photo',
+    'At least 300px x 300px PNG or JPG file.' => 'At least 300px x 300px PNG or JPG file.',
+    'First Name' => 'First Name',
+    'Last Name' => 'Last Name',
+    'E-mail Address' => 'E-mail Address',
+    'Mobile Number' => 'Mobile Number',
+    'Country' => 'Country',
+    'Address' => 'Address',
+    'Zip Code' => 'Zip Code',
+    'City' => 'City',
+    'Update Profile' => 'Update Profile',
+
+    // referrals.blade
+    'Copy' => 'Copy',
+
+    // slots.blade
+    'Slots' => 'Slots',
+    'No Games Found' => 'No Games Found',
+    'You have' => 'You have',
+    'freespins!' => 'freespins!',
+    'START' => 'START',
+    'Save for later' => 'Save for later',
+
+    // transactions.blade
+    'Date from' => 'Date from',
+    'Date to' => 'Date to',
+    'Type of operation' => 'Type of operation',
+    'All' => 'All',
+    'Invest from' => 'Invest from',
+
+    // twofactor.blade
+    'Disable 2-factor authenticator' => 'Disable 2-factor authenticator',
+    'Disable Two Factor Authenticator' => 'Disable Two Factor Authenticator',
+    'Setup 2-factor authenticator' => 'Setup 2-factor authenticator',
+    'bongo_twofactor_1' => 'Scan the image below with the two-factor authentication app. If don\'t have an scan application',
+    'DOWNLOAD APP' => 'DOWNLOAD APP',
+    'bongo_twofactor_2' => '. if you can\'t use a enter this text code instead.',
+    'Enable Two Factor Authenticator' => 'Enable Two Factor Authenticator',
+    'Verify Your Otp' => 'Verify Your Otp',
+    'Verify' => 'Verify',
+    'Verify Your Otp Disable' => 'Verify Your Otp Disable',
+
+
+    // bongo/user/auth
+    // login.blade
+    '10$ welcome bonus' => '10$ welcome bonus',
+    'Register and get' => 'Register and get',
+    'Username or Email' => 'Username or Email',
+    'Password' => 'Password',
+    'Login Now' => 'Login Now',
+    'Create an account' => 'Create an account',
+    'FORGOT YOUR PASSWORD?' => 'FORGOT YOUR PASSWORD?',
+
+    // register.blade
+    'Email address' => 'Email address',
+    '1 small letter minimum' => '1 small letter minimum',
+    '1 capital letter minimum' => '1 capital letter minimum',
+    '1 number minimum' => '1 number minimum',
+    '1 special character minimum' => '1 special character minimum',
+    '6 character password' => '6 character password',
+    'Confirm Password' => 'Confirm Password',
+    'Promo code' => 'Promo code',
+    'I am 18 years old and I accept the' => 'I am 18 years old and I accept the',
+
+
+    // bongo/user/auth/authorization
+    // 2fa.blade
+    '2FA Verification' => '2FA Verification',
+    'Current Time' => 'Current Time',
+    'Verification Code' => 'Verification Code',
+    'Submit' => 'Submit',
+
+    // Copy of email.blade
+    'Please Verify Your Email to Get Access' => 'Please Verify Your Email to Get Access',
+    'Your Email' => 'Your Email',
+    'Please check including your Junk/Spam Folder. if not found, you can' => 'Please check including your Junk/Spam Folder. if not found, you can',
+    'Resend code' => 'Resend code',
+
+    // email.blade
+    'Please Verify Your Email to' => 'Please Verify Your Email to',
+    'Get Access' => 'Get Access',
+    'Please check your Email' => 'Please check your Email',
+    'ENTER VERIFICATION CODE' => 'ENTER VERIFICATION CODE',
+    'Our Awesome Games' => 'Our Awesome Games',
+    'profile_games_description' => 'In the gaming hall, you have access to slot machines, with the highest return percentage and incredibly gambling gameplay!',
+    'Click to open it in fullscreen' => 'Click to open it in fullscreen',
+
+    // sms.blade
+    'Please Verify Your Mobile to Get Access' => 'Please Verify Your Mobile to Get Access',
+    'Your Mobile Number' => 'Your Mobile Number',
+    'If you don\'t get any code' => 'If you don\'t get any code',
+    'Try again' => 'Try again',
+
     
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
     'levels' => '',
     'levels' => '',
     'levels' => '',
