@@ -434,16 +434,146 @@ return [
     'If you don\'t get any code' => 'If you don\'t get any code',
     'Try again' => 'Try again',
 
-    
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
-    'levels' => '',
+    // bongo/user/auth/passwords
+    // code_verify.blade
+    'Verify Code' => 'Verify Code',
+    'Try to send again' => 'Try to send again',
+
+    // email.blade
+    'Select One' => 'Select One',
+
+    // reset.blade
+    'Login Here' => 'Login Here',
+
+
+
+    // bongo/user/games
+    // cardFinding.blade
+    'Current Balance' => 'Current Balance',
+    'Minimum' => 'Minimum',
+    'Maximum' => 'Maximum',
+    'Win Amount' => 'Win Amount',
+    'Game Instruction' => 'Game Instruction',
+    'Game Rule' => 'Game Rule',
+
+    // numberGuess.blade
+    'You Will Get' => 'You Will Get',
+    'Chances Per Invest' => 'Chances Per Invest',
+    'Win Bonus For This Chance' => 'Win Bonus For This Chance',
+    'Start Game' => 'Start Game',
+    'Guess The Number' => 'Guess The Number',
+    'Single (150%)' => 'Single (150%)',
+    'Double (350%)' => 'Double (350%)',
+    'Triple (800%)' => 'Triple (800%)',
+
+    // rockPaperScissors.blade
+    'VS' => 'VS',
+
+    // spinWheel.blade
+    'Sorry, your browser doesn\'t support canvas. Please try another.' => '',
+
+    // bongo/user/manual_payment
+    // manual_confirm.blade
+    'You have requested' => 'You have requested',
+    'Please pay' => 'Please pay',
+    'for successful payment' => 'for successful payment',
+    'Please follow the instruction below' => 'Please follow the instruction below',
+    'Select' => 'Select',
+    'Change' => 'Change',
+    'Remove' => 'Remove',
+
+    // bongo/user/payment
+    // manual_confirm.blade
+    'Payment Preview' => 'Payment Preview',
+    'PLEASE SEND EXACTLY' => 'PLEASE SEND EXACTLY',
+    'TO' => 'TO',
+    'SCAN TO SEND' => 'SCAN TO SEND',
+    'Image' => 'Image',
+
+    // deposit.blade
+    'Limit' => 'Limit',
+    'by' => 'by',
+    'Enter Amount' => 'Enter Amount',
+    'Amount must be greater than 10 USD.' => 'Amount must be greater than 10 USD.',
+    'Enter Promocode' => 'Enter Promocode',
+    'Add' => 'Add',
+    'No added benefits' => 'No added benefits',
+    'Confirm' => 'Confirm',
+
+    // Flutterwave.blade
+    'To get' => 'To get',
+    // Paystack.blade
+    'Pay Now' => 'Pay Now',
+    // preview.blade
+    'Payable' => 'Payable',
+    'In' => 'In',
+    'Conversion with' => 'Conversion with',
+    'Promocode bonus' => 'Promocode bonus',
+    // Razorpay.blade
+    'Stripe Payment' => 'Stripe Payment',
+    'Name on Card' => 'Name on Card',
+    'Card Number' => 'Card Number',
+    'Expiration Date' => 'Expiration Date',
+    'CVC Code' => 'CVC Code',
+
+    // StripeV3.blade
+    'Deposit with Stripe' => 'Deposit with Stripe',
+
+
+    // bongo/user/support
+    // create.blade
+    'Name' => 'Name',
+    'Subject' => 'Subject',
+    'Priority' => 'Priority',
+    'High' => 'High',
+    'Medium' => 'Medium',
+    'Low' => 'Low',
+    'Message' => 'Message',
+    'Attachments' => 'Attachments',
+    'Allowed File Extensions: .jpg, .jpeg, .png, .pdf, .doc, .docx' => 'Allowed File Extensions: .jpg, .jpeg, .png, .pdf, .doc, .docx',
+
+    // index.blade
+    'Last Reply' => 'Last Reply',
+    'Action' => 'Action',
+    'Ticket' => 'Ticket',
+    'Open' => 'Open',
+    'Answered' => 'Answered',
+    'Customer Reply' => 'Customer Reply',
+    'Closed' => 'Closed',
+
+    // view.blade
+    'Replied' => 'Replied',
+    'Allowed File Extensions: .jpg, .jpeg, .png, .pdf' => 'Allowed File Extensions: .jpg, .jpeg, .png, .pdf',
+    'Reply' => 'Reply',
+    'Posted on' => 'Posted on',
+    'Confirmation' => 'Confirmation',
+    'Are you sure you want to Close This Support Ticket' => 'Are you sure you want to Close This Support Ticket',
+
+    // bongo/user/withdraw
+    // log.blade
+    'Amount' => 'Amount',
+    'Receivable' => 'Receivable',
+    'Completed' => 'Completed',
+    'Rejected' => 'Rejected',
+
+    // methods.blade
+    'Money balance' => 'Money balance',
+    'Min 5$ and Max amount of Money balance' => 'Min 5$ and Max amount of Money balance',
+    'Select Crypto' => 'Select Crypto',
+    'Send to (enter address)' => 'Send to (enter address)',
+    'Send to (choose network)' => 'Send to (choose network)',
+    'Select network' => 'Select network',
+    'BEP 20' => 'BEP 20',
+    'TRC 20' => 'TRC 20',
+    'ERC 20' => 'ERC 20',
+    'Note: Transfer fee included' => 'Note: Transfer fee included',
+    'ORDER WITHDRAW' => 'ORDER WITHDRAW',
+    'SOME ERROR' => 'SOME ERROR',
+    'Your order for withdrawal' => 'Your order for withdrawal has been accepted for consideration. you will be notified of the withdrawal by receiving a notification and e-mail',
+
+    // preview.blade
+    'Request Amount' => 'Request Amount',
+    'Withdrawal Charge' => 'Withdrawal Charge',
+    'Balance Will be' => 'Balance Will be',
+    'Google Authenticator Code' => 'Google Authenticator Code',
 ];
