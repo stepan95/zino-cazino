@@ -20,7 +20,7 @@
                             <div class="text-center">
                                 <button type="submit" class="cmn-btn">@lang('Verify Code') <i
                                         class="las la-sign-in-alt"></i></button>
-                                <p class="mt-4">@lang('Please check including your Junk/Spam Folder. if not found, you can ')
+                                <p class="mt-4">@lang('Please check including your Junk/Spam Folder. if not found, you can')
                                     <a href="{{ route('user.password.request') }}">@lang('Try to send again')</a></p>
                             </div>
 

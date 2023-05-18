@@ -67,7 +67,7 @@
                                         class="fas fa-info-circle mr-2"></i> @lang('Minimum')
                                     : {{ getAmount($game->min_limit) }} {{$general->cur_text}} | @lang('Maximum')
                                     : {{ getAmount($game->max_limit) }} {{$general->cur_text}}</small>
-                                <small class="form-text text-muted mb-3">Win Amount : <span style="color:#ffc107;">Single (150%)</span> | <span style="color:#ffc107;">Double (350%)</span> | <span style="color:#ffc107;">Triple (800%)</span></small>
+                                <small class="form-text text-muted mb-3">@lang('Win Amount') : <span style="color:#ffc107;">@lang('Single (150%)')</span> | <span style="color:#ffc107;">@lang('Double (350%)')</span> | <span style="color:#ffc107;">@lang('Triple (800%)')</span></small>
                                 <div class="input-group mb-3">
                                     <input type="number" min="0" max="9"
                                            class="form-control amount-field custom-amount-input" name="number"

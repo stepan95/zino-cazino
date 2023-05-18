@@ -12,28 +12,28 @@
                                 </div>
                                 <div id="slot-view">
                                     <div id="ball-1">
-                                        <div class="poolNumber">@lang('1')</div>
+                                        <div class="poolNumber">1</div>
                                     </div>
                                     <div id="ball-2">
-                                        <div class="poolNumber">@lang('2')</div>
+                                        <div class="poolNumber">2</div>
                                     </div>
                                     <div id="ball-3">
-                                        <div class="poolNumber">@lang('3')</div>
+                                        <div class="poolNumber">3</div>
                                     </div>
                                     <div id="ball-4">
-                                        <div class="poolNumber">@lang('4')</div>
+                                        <div class="poolNumber">4</div>
                                     </div>
                                     <div id="ball-5">
-                                        <div class="poolNumber">@lang('5')</div>
+                                        <div class="poolNumber">5</div>
                                     </div>
                                     <div id="ball-6">
-                                        <div class="poolNumber">@lang('6')</div>
+                                        <div class="poolNumber">6</div>
                                     </div>
                                     <div id="ball-7">
-                                        <div class="poolNumber">@lang('7')</div>
+                                        <div class="poolNumber">7</div>
                                     </div>
                                     <div id="ball-8">
-                                        <div class="poolNumber">@lang('8')</div>
+                                        <div class="poolNumber">8</div>
                                     </div>
                                 </div>
                             </div>

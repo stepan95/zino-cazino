@@ -17,10 +17,10 @@
                                         @csrf
                                         <ul class="list-group text-center">
                                             <li class="list-group-item bg-transparent">
-                                                @lang('Please Pay: '){{getAmount($deposit->final_amo)}} {{$deposit->method_currency}}
+                                                @lang('Please Pay'): {{getAmount($deposit->final_amo)}} {{$deposit->method_currency}}
                                             </li>
                                             <li class="list-group-item bg-transparent">
-                                                @lang('You will get: '){{getAmount($deposit->amount)}}  {{__($general->cur_text)}}
+                                                @lang('You Will Get'): {{getAmount($deposit->amount)}}  {{__($general->cur_text)}}
                                             </li>
                                             <li class="list-group-item bg-transparent">
                                                 <button type="button" class="cmn-btn btn-round w-100 custom-success text-center" id="btn-confirm">@lang('Pay Now')</button>

@@ -16,10 +16,10 @@
                                     <form action="{{$data->url}}" method="{{$data->method}}">
                                         <ul class="list-group text-center">
                                             <li class="list-group-item bg-transparent">
-                                                @lang('Please Pay: '){{getAmount($deposit->final_amo)}} {{$deposit->method_currency}}
+                                                @lang('Please Pay'): {{getAmount($deposit->final_amo)}} {{$deposit->method_currency}}
                                             </li>
                                             <li class="list-group-item bg-transparent">
-                                                @lang('To get: '){{getAmount($deposit->amount)}}  {{__($general->cur_text)}}
+                                                @lang('To get'): {{getAmount($deposit->amount)}}  {{__($general->cur_text)}}
                                             </li>
                                             <li class="list-group-item bg-transparent">
                                                 <script src="{{$data->src}}"

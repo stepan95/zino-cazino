@@ -22,7 +22,7 @@
                             </div><!-- form-group end -->
 
                             <div class="form-group">
-                                <label for="email" class="my_value">@lang('Email address')</label>
+                                <label for="email" class="my_value">@lang('E-Mail Address')</label>
                                 <input id="email" type="text" class="form-control" name="value"
                                        value="{{ old('value') }}" required>
                             </div><!-- form-group end -->

@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <br>
-                            <button class="cmn-btn btn-lg btn-block text-center" type="submit"> @lang('PAY NOW')
+                            <button class="cmn-btn btn-lg btn-block text-center" type="submit"> @lang('Pay Now')
                             </button>
 
                         </form>
